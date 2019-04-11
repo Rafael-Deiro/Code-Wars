@@ -16,11 +16,14 @@ Some Kata may have only min_ or bp_ copies or none of them.<br>
 ## Summary
 ### Kata Index
 + [**PHP**](PHP/)
+    + [**7 kyu**](PHP/7kyu)
+        + [**Logs**](PHP/7kyu/logs/)
+            - [*Bus Counter Logs*](PHP/7kyu/logs/bus_counter.log.txt "bus_counter.log.txt")
+        - [*Bus Counter*](PHP/7kyu/bus_counter.php "bus_counter.php")
     + [**8 kyu**](PHP/8kyu/)
         + [**Logs**](PHP/8kyu/logs/)
             - [*Summation Logs*](PHP/8kyu/summation.log.txt "summation.log.txt")
         - [*Summation*](PHP/8kyu/summation.php "summation.php")
-        - [*Minified Summation*](PHP/8kyu/summation.php "min_summation.php")
 
 ---
 

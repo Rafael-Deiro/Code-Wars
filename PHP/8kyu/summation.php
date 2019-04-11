@@ -76,7 +76,7 @@ class testSummation extends APSummation{
     $this->checkValidity($this->summation(3.773e5), 71177833650, true);
     $this->checkValidity($this->summation('abq'), false, true);
 
-    echo 'The assertion logs can be found at /PHP/8kyu/logs/summation.log.txt';
+    echo "The assertion logs can be found at /PHP/8kyu/logs/summation.log.txt\n";
   }
 
   /**
