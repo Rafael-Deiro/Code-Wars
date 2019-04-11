@@ -40,24 +40,18 @@ class APSummation{
    * @return int Returns the AP sum
   */
   public function summation($n){
-
-    // Before processing we check if $n is numeric. If it isn`t, we return false
     if (!is_numeric($n)){
       return false;
     }
 
-    // AP elements array, started with [0] = 0 so the AP elements begin at index 1
     $elements = [0 => 0];
   
-    // First we create and push the elements to the array
     for ($i = 1; $i <= $n; $i++){
       $elements[] = $i;
     }
-  
-    // Then we obtain the AP sum and round it to the nearest integer
+
     $sum = round(($n * ($elements[1] + $elements[$n]))/2);
-  
-    // Now we return $sum explicitly as int (because round() outputs a float)
+
     return (int) $sum;
   }
 }
@@ -88,9 +82,9 @@ class testSummation extends APSummation{
    * @return bool True if the assertion is valid. False if the assertion is invalid.
   */
   public function checkValidity($actual, $expected, $sameType = false){
-    // Sets $actual and $expected strings for the log file writing
     $actualStr = "";
     $expectedStr = "";
+
     if ($actual === true){
       $actualStr = "true";
     }
@@ -111,29 +105,21 @@ class testSummation extends APSummation{
       $expectedStr = strval($expected);
     }
 
-    // Validates the assertion by values and types
     if ($sameType === true){
       if ($actual === $expected){
-
-        // Actions when the assertion is valid
         $log = [[$actualStr, $expectedStr], "PASS: The actual match with the expected in value and type"];
         $this->logTest($log[0], $log[1]);
         return true;
       }
     }
-
-    // Validates the assertion only by values
     else {
       if ($actual == $expected){
-
-        // Actions when the assertion is valid
         $log = [[$actualStr, $expectedStr], "PASS: The actual match with the expected in value"];
         $this->logTest($log[0], $log[1]);
         return true;
       }
     }
 
-    // Actions when the assertion is invalid
     $log = [[$actualStr, $expectedStr], "FAIL: The actual doesn`t match with the expected either in value or type."];
     $this->logTest($log[0], $log[1]);
     return false;
@@ -146,19 +132,14 @@ class testSummation extends APSummation{
    * @param string $log Log message to be recorded in the file.
   */
   public function logTest(array $values, string $log){
-
-    // Opens the log file or creates if it doesn`t exists
     $logFile = fopen('logs/summation.log.txt', 'a+');
 
-    // Creates the log string containing the date and time of the log, as well as the message, the expected and the actual values
     $logString = date('Y/m/d @ H:i:s') . " | $log \nExpected: {$values[1]} | Result: {$values[0]}\n\n";
 
-    // Appends the log string and closes the file
     fwrite($logFile, $logString);
     fclose($logFile);
   }
 }
 
-// Now we run the test
 $testSum = new testSummation();
 $testSum->testSummationShouldResultIntAPSum();
