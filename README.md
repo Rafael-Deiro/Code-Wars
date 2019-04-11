@@ -3,7 +3,7 @@ CodeWars Katas I`ve solved (Description + Solution)
 
 ## Folder Logic
 All Katas are separated in folders by language and sub-folders by rank(kyu). E.g. /PHP/8kyu/\s\s
-All Katas are indexed in [kata_index.md](kata_index.md).
+All Katas are indexed in *Summary* section.
 
 ## Organization
 + *Best Practice* Katas are prefixed by *bp_*.
@@ -11,6 +11,15 @@ All Katas are indexed in [kata_index.md](kata_index.md).
 + *Minified Best Practice* Katas are prefixed by *min_bp_*.
 Minified Katas can be either best practice or not, and the best practice Katas aren\`t minified (They still may have comments explaining the code and spaces for a better reading).\s\s
 Some Katas may have only min_ or bp_ copies or none of them.\s\s
+
+## Summary
+### Katas Index
++ [**PHP**](PHP/)
+    + [**8 kyu**](PHP/8kyu/)
+        + [**Logs**](PHP/8kyu/logs/)
+            - [*Summation Logs*](PHP/8kyu/summation.log.txt "summation.log.txt")
+        - [*Summation*](PHP/8kyu/summation.php "summation.php")
+        - [*Minified Summation*](PHP/8kyu/summation.php "min_summation.php")
 
 ---
 
