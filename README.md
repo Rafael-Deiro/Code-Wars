@@ -14,7 +14,7 @@ Minified Kata can be either best practice or not, and the best practice Kata are
 Some Kata may have only min_ or bp_ copies or none of them.<br>
 
 ## Summary
-### Katas Index
+### Kata Index
 + [**PHP**](PHP/)
     + [**8 kyu**](PHP/8kyu/)
         + [**Logs**](PHP/8kyu/logs/)
