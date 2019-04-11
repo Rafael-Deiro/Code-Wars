@@ -8,5 +8,5 @@ Common, bp_, min_ and min_bp_ Katas from 8 kyu rank for PHP.
     - [*Minified Summation*](min_summation.php "min_summation.php")
 
 ## Log files
-+ [*Logs*](logs/ "logs")
++ [**Logs**](logs/ "logs")
     - [*Summation Logs*](logs/summation.log.txt "summation.log.txt")
