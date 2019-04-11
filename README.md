@@ -9,6 +9,7 @@ All Katas are indexed in **Summary** section.
 + **Best Practice** Katas are prefixed by ***bp_***.
 + **Minified** Katas are prefixed by ***min_***.
 + **Minified Best Practice** Katas are prefixed by ***min_bp_***.
+
 Minified Katas can be either best practice or not, and the best practice Katas aren\`t minified (They still may have comments explaining the code and spaces for a better reading).<br>
 Some Katas may have only min_ or bp_ copies or none of them.<br>
 
