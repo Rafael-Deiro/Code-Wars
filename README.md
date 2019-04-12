@@ -16,6 +16,10 @@ Some Kata may have only min_ or bp_ copies or none of them.<br>
 ## Summary
 ### Kata Index
 + [**PHP**](PHP/)
+    + [**6 kyu**](PHP/6kyu)
+        + [**Logs**](PHP/6kyu/logs)
+            - [*Alphabet Indexer Logs*](PHP/6kyu/logs/alphabet_indexer.log.txt "alphabet_indexer.log.txt")
+        - [*Alphabet Indexer*](PHP/6kyu/alphabet_indexer.php "alphabet_indexer.php")
     + [**7 kyu**](PHP/7kyu)
         + [**Logs**](PHP/7kyu/logs/)
             - [*Bus Counter Logs*](PHP/7kyu/logs/bus_counter.log.txt "bus_counter.log.txt")
